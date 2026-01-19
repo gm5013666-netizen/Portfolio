@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  direction: rtl;
+  background-color: #f5f7fa;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background-image: url("hero.jpg"); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  position: relative;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.card h1 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #5f81b8;
+  color: white;
+}
+
+.primary:hover {
+  background: #516688;
+}
+
+.secondary {
+  border: 2px solid#516688;
+  color: #516688;
+}
+
+.secondary:hover {
+  background:#516688;
+  color: white;
+}
+
+/* Services */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+
+}
+
+.services-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+}
+
+.service {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact {
+  background:#5f81b8;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+ 
+}
+.contact-btn{
+  background-color: #516688;
+  color: white;
+   padding: 12px 20px; 
+   border-radius: 8px; 
+   transition: 0.3s; 
+} 
+.contact-btn:hover{
+  background-color: #516688;
+}
+.gmail-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #516688;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  /* font-size: 25px; */
+ 
+  /* margin-bottom: 30px; */
+  transition: all 0.3s ease;
+}
+
+.gmail-btn:hover {
+  background-color: #516688;
+  transform: translateY(-2px);
+}
+.service-card {
+  background:#ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgbe(0,0,0,0.06);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.service-card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg,#516688,#516688);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* عند المرور بالماوس */
+.service-card:hover {
+  background-color: #eef4ff;
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.1);
+}
+.service-card:hover::before{
+  opacity: 1;
+}
+.service-card h3{
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+/* عند الاختيار */
+.service-card p {
+  color: #6b7280;
+ line-height: 1.6;
+}
+.contact{
+  background-color: #516688;
+}
+.about{
+  max-width: 700px;
+  margin: 60px auto;
+  text-align: center;
+
+}
+.about h2{
+  font-size: 28px;
+  margin-bottom: 15px ;
+  color: #2c3e50;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  border-color: #3b82f6; 
+   
+}
+.about p{
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+  /* background-color: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px;
+  width: 260px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #374151; */
+}
+ .about p:hover{
+  border-color: #93c5fd;
+} 
+.about p{
+  /* background-color: #e0edff; */
+   border-color: #3b82f6; 
+   color: #1e3a8a; 
+} 
